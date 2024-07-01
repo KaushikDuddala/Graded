@@ -1,0 +1,11 @@
+{
+    "backgroundColor":"#000000",
+    "primaryColor":"#5D3FD3",
+    "headerColor":"#ffffff",
+    "secondaryColor":"#472abb",
+    "disabledButtonColor":"#000000",
+    "placeholderTextColor":"#808080",
+    "textColor":"#bfbfbf",
+    "lightStatusBar":true,
+    "progressColor":"#E6E6FA"
+  }
