@@ -150,3 +150,53 @@ const styles = StyleSheet.create({
         alignSelf: "center",
     }
 });
+
+
+const testToken = require("./procedures/testToken.json").token
+
+
+const Stack = createNativeStackNavigator();
+
+export default function App() {
+
+
+
+    // const [appStage, setAppStage] = useState("login")
+    const [token, setToken] = useState(testToken)
+
+
+    return (
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen
+                    name="Login"
+                    component={LoginPage}
+                />
+                <Stack.Screen
+                    name="Grades"
+                    component={GradesPage}
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
+    )
+
+
+    /*
+      switch(appStage)
+      {
+        case "login":
+          console.log('lgoin')
+          return loginPage(setToken, setAppStage)
+        case "home":
+          return
+        case "grades":
+          console.log('grades')
+          return gradesPage(token)
+      }
+      */
+
+
+}
+
+
+
